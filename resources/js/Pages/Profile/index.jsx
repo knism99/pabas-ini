@@ -85,8 +85,14 @@ export default function Dashboard(props) {
                                         </td>
                                     </tr>
                                 ))}
-                            </tbody>
+                                {posts.length === 0 && (
+                                    <tr>
+                                        <td colSpan="4" className="px-6 py-4 text-center border">No post found.
 
+                                        </td>
+                                    </tr>
+                                )}
+                            </tbody>
                         </table>
                     </div>
                 </div>
